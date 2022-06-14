@@ -14,7 +14,7 @@
 <body>
    <div class="wrapper">
     <header class="header">
-        <div class="header__top">
+        <div id="home" class="header__top">
             <strong class="header__logo_top">
                 <a href="#" class="header__logo-pic">Konstruct</a>
             </strong>
@@ -22,20 +22,23 @@
                 <h1 class="header__tag-title">PARTNER WITH KONSTUCT</h1>
                 <p class="header__tag-text">An award-winning construction management firm</p>
             </div>
-            <button class="header__btn">SCROLL DOWN</button>
+            <a class="header__btn" href="#about">SCROLL DOWN</a>
         </div>
         <div class="header__bottom">
-            <div class="header__container_bottom">
+            <div class="header__bottom-container">
                 <strong class="header__logo">
                     <a href="#" class="header__logo-pic">Konstruct</a>
                 </strong>
+                <div class="sticky-menu__icon">
+                    <span></span>
+                </div>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">About</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Services</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Work</a></li>
-                        <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+                        <li class="header__nav-item"><a data-goto="#home" href="#home" class="header__nav-link">Home</a></li>
+                        <li class="header__nav-item"><a data-goto="#about" href="#about" class="header__nav-link">About</a></li>
+                        <li class="header__nav-item"><a data-goto="#services" href="#services" class="header__nav-link">Services</a></li>
+                        <li class="header__nav-item"><a data-goto="#work" href="#work" class="header__nav-link">Work</a></li>
+                        <li class="header__nav-item"><a data-goto="#contact" href="#contact" class="header__nav-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,7 +47,7 @@
     <main class="main">
         <div class="main__container">
             <h2 class="main__title">OUR STORY</h2>
-            <section class="main__story">
+            <section id="about" class="main__story">
                 <article class="story__inner">
                     <h2 class="story__title">Founded in 2011 by John Mathew Smith, <a href="#" class="story__link">Konstruct</a> has become the number one construction management firm</h2>
                     <p class="story__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
@@ -57,7 +60,7 @@
                     </ul>
                 </nav>
             </section>
-            <section class="main__capabilities">
+            <section id="services" class="main__capabilities">
                 <div class="capabilities__top">
                     <h2 class="capabilities__title">our capabilities</h2>
                     <p class="capabilities__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
@@ -82,7 +85,7 @@
                 </div>
             </section>
         </div>
-        <section class="main__getin">
+        <section id="work" class="main__getin">
             <div class="getin__container">
                 <h2 class="getin__title">Want to build something amazing?</h2>
                 <button class="getin__btn">GET IN TOUCH</button>
@@ -98,7 +101,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer__container">
             <div class="footer__company">
                 <h4 class="footer__title">company</h4>
@@ -153,5 +156,6 @@
         </div>
     </footer>
    </div>
+   <script src="js/script.js"></script>
 </body>
 </html>
